@@ -1,18 +1,52 @@
+# LZ78 Compression Algorithm
+A Java implementation of the LZ78 compression algorithm.
+## Description
+This project implements the LZ78 compression algorithm in Java. LZ78 is a dictionary-based lossless data compression technique that builds a dictionary of previously seen patterns to encode data more efficiently.
+## Features
+
+1. Text file compression using LZ78 dictionary-based approach
+2. File decompression to restore original data
+3. Binary string representation of compressed data
+4. Command-line interface for user interaction
+5. Compression statistics including bit savings analysis
+
+## Usage
+The program provides a simple command-line interface with three options:
+- Choose an option: compress, decompress, or exit
+### Compression
+- Enter input file name: example.txt
+- Enter output binary file name: example.bin
+### Decompression
+- Enter binary file name: example.bin
+- Enter output text file name: restored.txt
+- Implementation Details
+  
+## This implementation:
+
+* Builds a dictionary of patterns found in the input data
+* Encodes each pattern as a (index, character) pair
+* Represents compressed data in binary form
+* Provides bit-level analysis of compression efficiency
+
 ## Getting Started
+1.Clone the repository:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+```bash
+git clone https://github.com/yourusername/lz78-compression.git
+```
 
-## Folder Structure
+2. Compile the Java code:
+   
+```
+javac App.java
+```
 
-The workspace contains two folders by default, where:
+3. Place your input text files in the 'resources' directory
+4. Follow the prompts to compress or decompress files
+5. The compressed/decompressed files will be saved in the 'resources' directory
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Performance
+The algorithm provides efficient compression for text files with repeated patterns. Compression ratio depends on the repetitive nature of the input data.
+## License
+MIT
