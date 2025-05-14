@@ -32,7 +32,7 @@ The program provides a simple command-line interface with three options:
 1.Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/lz78-compression.git
+git clone https://github.com/mariamelghandoor/LZ78-compressor.git
 ```
 
 2. Compile the Java code:
